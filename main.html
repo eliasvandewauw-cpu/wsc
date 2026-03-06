@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Warhammer Club — Sint‑Lievenscollege</title>
+  <meta name="description" content="De officiële Warhammer-club van het Sint-Lievenscollege: schilderen, hobbyen en toernooien voor alle leerlingen.">
+  <style>
+    :root{
+      --accent:#8b0000;
+      --accent-2:#222;
+      --muted:#666;
+      --card:#f7f7f7;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#fff;color:#111;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--accent) 0%, #5a0a0a 60%);color:#fff;padding:22px 18px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--accent-2);font-weight:800}
+    nav{margin-left:auto}
+    nav a{color:#fff;text-decoration:none;margin-left:14px;font-weight:600}
+    .hero{display:flex;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{margin:0;font-size:32px}
+    .card{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    section{padding:28px 0;border-bottom:1px solid #eee}
+    .cta{background:#fff;color:var(--accent);border:2px solid var(--accent);padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .events li{margin-bottom:10px}
+    footer{padding:22px 0;color:#666;font-size:14px}
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:calc(33.333% - 8px);border-radius:6px;display:block}
+    @media (max-width:720px){.hero{flex-direction:column;align-items:flex-start}.gallery img{width:calc(50% - 8px)}}
+    .nav-toggle{display:none}
+    @media (max-width:720px){nav{display:none}.nav-toggle{display:block;margin-left:auto;background:transparent;border:2px solid rgba(255,255,255,0.2);color:#fff;padding:6px 10px;border-radius:6px}}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff;color:var(--accent);font-weight:700}
+    .rules{background:#fff;padding:14px;border-radius:8px}
+    .contact form{display:grid;gap:8px}
+    .input,textarea,select{padding:10px;border-radius:6px;border:1px solid #ddd}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo"><img src="https://chatgpt.com/backend-api/estuary/content?id=file_000000002d7c71f4b1eea194c7a72b17&ts=490016&p=fs&cid=1&sig=6fea91bff1e75dcbe0da55fa0bf2d8a5ac6851723ab048b25d99da51cc72f02e&v=0" alt="WL"></div>
+        <div>
+          <div style="font-weight:800">Warhammer Club</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.9)">Sint‑Lievenscollege</div>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" onclick="toggleNav(this)">Menu</button>
+      <nav aria-label="Hoofdmenu">
+        <a href="#about">Over ons</a>
+        <a href="#events">Activiteiten</a>
+        <a href="#gallery">Galerij</a>
+        <a href="#join">Meedoen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div style="flex:1">
+        <h1>Warhammer Club — Sint‑Lievenscollege</h1>
+        <p style="color:var(--muted);margin-top:8px">Iedereen welkom: van beginnende schilders tot ervaren legerbouwers. Kom hobbyen, leer technieken en leer hoe het spel gespeeld word.</p>
+        <p style="margin-top:12px"><a class="cta" href="#join">Doe mee</a></p>
+      </div>
+      <div style="width:340px">
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Sessies</h3>
+          <p style="margin:0;color:var(--muted)"><strong>Iedere vrijdag</strong> — A2.01, 12u10-13u05</p>
+          <p style="margin-top:12px;color:var(--muted)">Verf en borstels zijn beschikbaar, er zijn ook modellen van de club. Borg voor tafelkledij is niet nodig.</p>
+          <p style="margin-top:12px"><a href="#events" style="text-decoration:none">Bekijk alle activiteiten →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="grid">
+        <div>
+          <h2>Over de club</h2>
+          <p>De Warhammer Club van het Sint‑Lievenscollege is een middagactiviteit waar creativiteit en strategie samenkomen. We focussen op schilderen en spelregels. We organiseren ook interne speeldagen, en je kan op het groot scherm games spelen.</p>
+          <ul>
+            <li>Leeftijd: iedereen</li>
+            <li>Locatie: A2.01, Sint‑Lievenscollege Humaniora Gent</li>
+            <li>Begeleiders: Dhr. Wulgaert en oudere leerlingen</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Clubwaarden</h3>
+          <div class="card">
+            <p style="margin:6px 0">— Respect & sportiviteit</p>
+            <p style="margin:6px 0">— Creativiteit & leren</p>
+            <p style="margin:6px 0">— Veiligheid & zorg voor materiaal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Activiteiten & kalender</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Wekelijkse hobbyavonden</h3>
+          <p style="color:var(--muted);margin:6px 0">Elke vrijdag 12u10-13u05 — A2.01</p>
+          <ul class="events">
+            <li><strong>9 jan 2026</strong> — Paint & Build: basistechnieken</li>
+            <li><strong></strong> — </li>
+            <li><strong>5 juni 2026</strong> — Armies on Parade</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Workshops & toernooien</h3>
+          <p style="color:var(--muted);">We organiseren door het jaar heen ook een paar battles.</p>
+          <p style="margin-top:8px"><a href="#join">Inschrijven voor workshops</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galerij</h2>
+      <div class="gallery card">
+        <img src="https://via.placeholder.com/400x300?text=Model+1" alt="Geverfd model 1">
+        <img src="https://via.placeholder.com/400x300?text=Model+2" alt="Geverfd model 2">
+        <img src="https://via.placeholder.com/400x300?text=Toernooi" alt="Toernooi">
+        <img src="https://via.placeholder.com/400x300?text=Hobby+tafel" alt="Hobby tafel">
+        <img src="https://via.placeholder.com/400x300?text=Workshop" alt="Workshop">
+        <img src="https://via.placeholder.com/400x300?text=Basing" alt="Basing">
+      </div>
+      <p style="color:var(--muted);margin-top:8px">Wil je jouw werk toevoegen? Stuur een foto via het contactformulier.</p>
+    </section>
+
+    <section id="rules">
+      <h2>Regels & veiligheidsrichtlijnen</h2>
+      <div class="rules">
+        <ol>
+          <li>Behandel materiaal met zorg. Gebruik verf en lijm op de daarvoor voorziene plaatsen.</li>
+          <li>Alcohol of e‑sigaretten zijn verboden tijdens clubactiviteiten.</li>
+          <li>Eten mag, zolang het wordt opgekuist en je je werkplek proper achterlaat.</li>
+          <li>Respecteer medespelers: geen agressief gedrag of schelden.</li>
+          <li>Eigen modellen en verf moeten duidelijk niet van de club zijn.</li>
+          <li>Het clubmateriaal is er voor iedereen — gebruik het zuinig.</li>
+          <li>Help met opruimen wanneer de activiteit gedaan is, dat duurt niet lang en helpt ons veel.</li>
+          <li>Blijf van andere mensen hun spullen, tenzij je toestemming hebt gekregen.</li>
+          <li>Zorg dat je op tijd bent, anders is er misschien geen plaats meer.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="join">
+      <h2>Meedoen / Contact</h2>
+      <div class="grid">
+        <div class="card contact">
+          <h3>Inschrijven</h3>
+          <form onsubmit="fakeSubmit(event)">
+            <label>Naam <input class="input" required name="naam"></label>
+            <label>Klas/Leeftijd <input class="input" name="klas"></label>
+            <label>E‑mail <input class="input" type="email" required name="email"></label>
+            <label>Voor wat?
+              <select class="input" name="interesse">
+                <option>Armies on parade</option>
+                <option>Paint en build (zonder reservatie)</option>
+                <option>Beide</option>
+              </select>
+            </label>
+            <label>Opmerking <textarea class="input" rows="3" name="opmerking"></textarea></label>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button type="submit">Verstuur inschrijving</button>
+              <div style="color:var(--muted);font-size:13px">We sturen een bevestiging per e‑mail.</div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3>Contactgegevens</h3>
+            <p style="margin:6px 0">Begeleiders: Dhr.Wulgaert (robbe.wulgaert@sintlievenscollege.be)</p>
+            <p style="margin:6px 0">Clubcoördinator: Dhr.Wulgaert</p>
+            <p style="margin:6px 0">Volg ons op: <span class="pill">Instagram</span> <span class="pill"><a href="https://discord.gg/Z4ksFYmzuC">Discord</a></span></p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>FAQ</h4>
+            <p style="margin:6px 0;color:var(--muted)"><strong>Mag ik mijn eigen minis meenemen?</strong> Ja — label ze aub.</p>
+            <p style="margin:6px 0;color:var(--muted)"><strong>Mag je de geschilderde miniaturen meenemen naar huis?</strong> Ja, zolang je openstaat voor kritiek en tips.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>© Sint‑Lievenscollege Warhammer Club — Alle rechten voorbehouden</div>
+      <div style="font-size:13px;color:var(--muted)">Laatste update: 25 november 2025</div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn){
+      var nav=document.querySelector('nav');
+      var open = nav.style.display === 'block';
+      nav.style.display = open ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', String(!open));
+    }
+
+    function fakeSubmit(e){
+      e.preventDefault();
+      var form = e.target;
+      // Simuleer een submit — in echte site koppel je aan server of email
+      alert('Dank! Je inschrijving is ontvangen. De begeleider neemt contact op.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>>
